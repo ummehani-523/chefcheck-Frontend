@@ -1,5 +1,9 @@
+/* ========
+body
+=========== */
 body{
     background-color:#F0F0FF;
+    color: black;
     background-image:linear-gradient(to left, #F0F0FF 0%, #F0F0FF 50.75%, #5f5d7e 50.75%, #5f5d7e 100%) ;
 }
 .container {
@@ -19,11 +23,7 @@ h1{
     padding: 10px 35px;
 }
 form{
-  
-  background-color 
-}
-.form-group{
-    background-color: ;
+    background-color: light;
 }
 
 .cover{
@@ -33,10 +33,140 @@ form{
     object-position:center;
     border-radius:50%;
     margin-top:1rem;
-    /* border: 1px black solid; */
+   
     
 
 }
 .p-5{
     padding: 0.5rem 3rem !important;
 }
+
+     /* ============
+    INCIDENTS
+    ============ */
+.heading{
+    color: black;
+}
+.card-body{
+    font-size:12px;
+}
+.avatar{
+    width:39px;
+    height:39px;    
+    object-fit: cover;
+    object-position:center;
+    border-radius:50%;
+    margin-bottom:0px;
+    margin-top: 5px;
+   
+}
+table{
+     width:100%;
+   
+}
+
+th{
+    text-align:center
+}
+td{
+    text-align:center
+}
+table th,
+table td {
+  padding-right:2rem !important;
+  padding-left:2rem !important;
+  
+}
+.name{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important ;
+    padding-left:0.5em;
+}
+.action{
+    
+    padding:10px;
+    border-radius: 10%;
+
+
+}
+/*===========
+    sidebar
+    ===========
+ */
+ul{
+    padding: 0px ;
+}
+
+.sidebar-dark .nav-item .nav-link {
+    color: rgba(255,255,255,.8);
+    padding:0.75rem;
+    padding-left: 1rem;
+    
+    
+}
+.sidebar{
+    background-color:#5f5d7e;
+   
+}
+
+/* ========
+top bar
+========= */
+.topbar
+{
+   background-color:#F0F0FF;
+   
+}
+.topbar-1{
+    display:flex;
+   flex-direction:row;
+   justify-content: space-between;
+}
+.heading{
+    color:#5f5d7e
+}
+.media{
+    display:flex
+}
+.avatar-1{
+    width:30px;
+    height:30px;    
+    object-fit: cover;
+    object-position:center;
+    border-radius:50%;
+   
+}
+.dropdown-menu,
+.dropdown-menu-right{
+    width: 210px;
+}
+/* ========
+incidents tab
+========= */
+.nav-item{
+    display: inline;
+}
+.btn-given{
+     margin-left: 1em;
+}
+
+.btn-given:hover{
+    background-color:#3c3cfc !important;
+}
+.btn-inc{
+    margin-right: 1em;
+}
+.btn-inc:hover{
+    background-color: #f74040 !important;
+}
+.btn-received:hover{
+    background-color: #4e4d6b;
+}
+
+
+
+
+
+
+
