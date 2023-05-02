@@ -171,10 +171,11 @@
                     <!-- heading incidents -->
                    
                      <div class="h1 heading d-none d-sm-inline-block  mr-auto ml-md-3 my-2 my-md-0 ">
-                        <i class="fa fa-sticky-note" aria-hidden="true"></i>
-                        Incidents
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        Evaluations
                      </div>
                         
+
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -346,248 +347,138 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <div class="row topbar-1 mt-2 mb-6 ">
+                    <div class="row btn-eval topbar-1 mt-2 mb-6 ">
                         
-                        <ul class="  nav-link-1">
-                            <li class=" btn btn-primary bg-primary btn-given ">Given</li>
-                            <li class="btn btn-dark btn-received">Received</li>
-                        </ul>
+                       
                         
                         
-                        <p class="btn nav-link btn-inc btn-warning bg-danger text-center align-middle ml-2">
-                            <i class="fa fa-user-plus" aria-hidden="true"></i>
-                            Add Incidents
+                        <p class="btn nav-link  btn-primary bg-primary text-center align-middle ml-2">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Shedule Evaluation
                         </p>
                     </div>
-
-                    
-                    <!-- DataTales Example -->
                     <div class="card   mb-4 py-">
                         
                         <div class="card-body">
                             
                             <div class="table-responsive">
-                                <table class="table  table-sm table-light  table-bordered  table-responsive "  width="100%" cellspacing="0">
-                                    <thead class="thead">
+                                <table class="  table table-light  table-bordered table-evaluations table-responsive "  width="100%">
+                                    <thead class="thead thead-evaluations">
                                         <tr>
-                                            <th rowspan="1" colspan="1" >AVATAR </th>
-                                            <th class="w-25" rowspan="1" colspan="1" >EMPLOYEE</th>
-                                            <th class="w-25" rowspan="1" colspan="1">EVALUATER</th>
-                                            <th rowspan="1" colspan="1" >DATE</th>
-                                            <th rowspan="1" colspan="1" >FACTOR</th>
-                                            <th rowspan="1" colspan="1">RATINGS</th>
-                                            <th class="w-25" rowspan="1" colspan="1">ACTIONS</th>
+                                            
+                                            <th style="width:2%;"></th>
+                                            <th style="width: 15%;" >EMPLOYEE NAME</th>
+                                            <th style="width:  15%;" >SUPERVISOR NAME</th>
+                                            <th style="width:auto;">OPEN DATE</th>
+                                            <th >DUE DATE</th>
+                                            <th style="width: 30%;">FORM TITLE</th>
+                                            <th >TYPE</th>
+                                            <th style="width:15%;">EMPLOYEE STATUS</th>
+                                            <th style="width:15%;">SUPERVISOR STATUS</th>
+                                            <th style="width:2%;">ACTION</th>
                                         </tr>
                                     </thead>
-                                    
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
+                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye  bg-light action"></i>
-                                                <i class="fa fa-download   bg-light action"></i>
-                                            </td>
+                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
+                                            <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
+                                            <td class="align-middle text-center">.</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
-
+                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye bg-light action"></i>
-                                                <i class="fa fa-download bg-light action"></i>
-                                            </td>
+                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
+                                            <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
+                                            <td class="align-middle text-center">.</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
-
+                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye bg-light action"></i>
-                                                <i class="fa fa-download bg-light action"></i>
-                                            </td>
+                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
+                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
+                                            <td class="align-middle text-center">.</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
-
+                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye bg-light action"></i>
-                                                <i class="fa fa-download bg-light action"></i>
-                                            </td>
+                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
+                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
+                                            <td class="align-middle text-center">.</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
-
+                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye bg-light action"></i>
-                                                <i class="fa fa-download bg-light action"></i>
-                                            </td>
+                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
+                                            <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
+                                            <td class="align-middle text-center">.</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
-
+                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye bg-light action"></i>
-                                                <i class="fa fa-download bg-light action"></i>
-                                            </td>
+                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
+                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
+                                            <td class="align-middle text-center">.</td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="./img/employee.png" rel="employe avatar" class="avatar">
-
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <p class="name"><strong>Paml Beesly</strong></p>
-                                                <p class="name">paml.beesly@ladderocity.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">Michael Scott</td>
-                                            <td class="align-middle text-center">12/18/2021</td>
-                                            <td class="align-middle text-center">General</td>
-                                            <td class="align-middle text-center">
-                                                <div class="text-wrap">
-                                                    <div class="d-flex mb-2 justify-content-center align-items-center">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                        <img src="./img/star.png" alt="Review rating" width="17" class="mr-1">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <i class="fa fa-eye bg-light action"></i>
-                                                <i class="fa fa-download bg-light action"></i>
-                                            </td>
-                                        </tr>
-                                        
                                     </tbody>
                                 </table>
-                            </div>
+                            </div>    
+                              
+                              
+                              
+                              
+                              
+                              
+                              
                         </div>
                     </div>
 
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
+                    
+                    <!-- DataTales Example -->
+                    
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
