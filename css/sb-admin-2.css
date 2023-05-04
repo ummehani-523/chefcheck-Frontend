@@ -1826,14 +1826,14 @@ pre code {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
+  
+  
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6e707e;
+  
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #d1d3e2;
@@ -1854,7 +1854,7 @@ pre code {
 
 .form-control:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #6e707e;
+ 
 }
 
 .form-control:focus {
@@ -1881,13 +1881,12 @@ pre code {
 }
 
 .form-control::-ms-input-placeholder {
-  color: #858796;
-  opacity: 1;
+ 
 }
 
 .form-control::placeholder {
-  color: #858796;
-  opacity: 1;
+ 
+ 
 }
 
 .form-control:disabled, .form-control[readonly] {
@@ -1904,9 +1903,8 @@ input[type="month"].form-control {
   appearance: none;
 }
 
-select.form-control:focus::-ms-value {
-  color: #6e707e;
-  background-color: #fff;
+
+
 }
 
 .form-control-file,
@@ -1944,10 +1942,9 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #858796;
+  
   background-color: transparent;
-  border: solid transparent;
-  border-width: 1px 0;
+ 
 }
 
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {

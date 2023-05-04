@@ -171,7 +171,7 @@
                     <!-- heading incidents -->
                    
                      <div class="h1 heading d-none d-sm-inline-block  mr-auto ml-md-3 my-2 my-md-0 ">
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-check-circle fa-sm" aria-hidden="true"></i>
                         Evaluations
                      </div>
                         
@@ -353,7 +353,7 @@
                         
                         
                         <p class="btn nav-link  btn-primary bg-primary text-center align-middle ml-2">
-                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
                             Shedule Evaluation
                         </p>
                     </div>
@@ -364,105 +364,95 @@
                             <div class="table-responsive">
                                 <table class="  table table-light  table-bordered table-evaluations table-responsive "  width="100%">
                                     <thead class="thead thead-evaluations">
+                                        <div class="eval-tabs">
+                                            <p class="h6">Subordinate's Evaluations</p>
+                                            <div class="tab">
+                                                <div class="btn bg-light ml-0"> Active Evaluations</div>
+                                                <div class="btn bg-light"> Future Evaluations</div>
+                                                <div class="btn bg-light mr-0"> Completed Evaluations</div>
+                                              </div>
+                                        </div>
+                                        
+
                                         <tr>
                                             
-                                            <th style="width:2%;"></th>
+                                            
                                             <th style="width: 15%;" >EMPLOYEE NAME</th>
                                             <th style="width:  15%;" >SUPERVISOR NAME</th>
-                                            <th style="width:auto;">OPEN DATE</th>
+                                            <th >OPEN DATE</th>
                                             <th >DUE DATE</th>
-                                            <th style="width: 30%;">FORM TITLE</th>
+                                            
                                             <th >TYPE</th>
                                             <th style="width:15%;">EMPLOYEE STATUS</th>
                                             <th style="width:15%;">SUPERVISOR STATUS</th>
-                                            <th style="width:2%;">ACTION</th>
+                                            <th style="width:25%;">ACTION</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>
-                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
-                                            </td>
-                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Angela Martin</td>
                                             <td class="align-middle text-center">Jim Halpert</td>
                                             <td class="align-middle text-center">03/28/2023</td>
                                             <td class="align-middle text-center">12/04/2023</td>
-                                            <td class="align-middle text-center">Paramedic Evalution</td>
                                             <td class="align-middle text-center">Auto</td>
                                             <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
                                             <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
-                                            <td class="align-middle text-center">.</td>
+                                            <td class="align-middle text-center"><p class="btn btn-primary bg-primary p-2">Complete Evaluation</p></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
-                                            </td>
-                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Angela Martin</td>
                                             <td class="align-middle text-center">Jim Halpert</td>
                                             <td class="align-middle text-center">03/28/2023</td>
                                             <td class="align-middle text-center">12/04/2023</td>
-                                            <td class="align-middle text-center">Paramedic Evalution</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
+                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
+                                            <td class="align-middle text-center"><p class="btn btn-primary bg-primary p-2">Complete Evaluation</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
+                                            <td class="align-middle text-center">Auto</td>
+                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
+                                            <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
+                                            <td class="align-middle text-center"><p class="btn btn-primary bg-primary p-2">Complete Evaluation</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Jim Halpert</td>
+                                            <td class="align-middle text-center">03/28/2023</td>
+                                            <td class="align-middle text-center">12/04/2023</td>
                                             <td class="align-middle text-center">Auto</td>
                                             <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
                                             <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
-                                            <td class="align-middle text-center">.</td>
+                                            <td class="align-middle text-center"><p class="btn btn-primary bg-primary p-2">Complete Evaluation</p></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
-                                            </td>
-                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Angela Martin</td>
                                             <td class="align-middle text-center">Jim Halpert</td>
                                             <td class="align-middle text-center">03/28/2023</td>
                                             <td class="align-middle text-center">12/04/2023</td>
-                                            <td class="align-middle text-center">Paramedic Evalution</td>
-                                            <td class="align-middle text-center">Auto</td>
-                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
-                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
-                                            <td class="align-middle text-center">.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
-                                            </td>
-                                            <td class=" text-center">Angela Martin</td>
-                                            <td class="align-middle text-center">Jim Halpert</td>
-                                            <td class="align-middle text-center">03/28/2023</td>
-                                            <td class="align-middle text-center">12/04/2023</td>
-                                            <td class="align-middle text-center">Paramedic Evalution</td>
                                             <td class="align-middle text-center">Auto</td>
                                             <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
                                             <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
-                                            <td class="align-middle text-center">.</td>
+                                            <td class="align-middle text-center"><p class="btn btn-primary bg-primary p-2">Complete Evaluation</p></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
-                                            </td>
-                                            <td class=" text-center">Angela Martin</td>
+                                            <td class="align-middle text-center">Angela Martin</td>
                                             <td class="align-middle text-center">Jim Halpert</td>
                                             <td class="align-middle text-center">03/28/2023</td>
                                             <td class="align-middle text-center">12/04/2023</td>
-                                            <td class="align-middle text-center">Paramedic Evalution</td>
                                             <td class="align-middle text-center">Auto</td>
-                                            <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
                                             <td class="align-middle text-center"><div class="dot bg-warning"></div>In Progress</td>
-                                            <td class="align-middle text-center">.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                      <input type="checkbox" id="checkbox{{ item.id }}" [(ngModel)]="item.selected" [checked]="item.selected">
-                                            </td>
-                                            <td class=" text-center">Angela Martin</td>
-                                            <td class="align-middle text-center">Jim Halpert</td>
-                                            <td class="align-middle text-center">03/28/2023</td>
-                                            <td class="align-middle text-center">12/04/2023</td>
-                                            <td class="align-middle text-center">Paramedic Evalution</td>
-                                            <td class="align-middle text-center">Auto</td>
-                                            <td class="align-middle text-center"><div class="dot bg-success"></div>Completed</td>
                                             <td class="align-middle text-center"><div class="dot bg-danger"></div>Not Started</td>
-                                            <td class="align-middle text-center">.</td>
+                                            <td class="align-middle text-center"><p class="btn btn-primary bg-primary p-2">Complete Evaluation</p></td>
                                         </tr>
+
+                                        
+                                        
+                                        
                                     </tbody>
                                 </table>
                             </div>    

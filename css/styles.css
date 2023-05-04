@@ -204,6 +204,11 @@ Evaluations
 .thead-evaluations{
     font-size:0.63rem;
 }
+.table-evaluations td{
+    font-size:1.2em;
+}
+
+
 .dot{
     width:6px;
     height: 6px;
@@ -218,9 +223,74 @@ Evaluations
     margin-right:0.5em;
 
 }
+.tab{
+    border-bottom: 1px solid #ccc;
+    padding-bottom:5px;
+  }
+
+.tab .btn {
+    cursor: pointer;
+    padding: 10px 15px;
+}
+  
+.tab .btn:hover {
+    background-color:#fff !important;
+    border: 4px solid #5f5d7e ;
+    border-bottom:none;
+    font-weight:600;
+}
+  
+  .tab .btn.active {
+    background-color: #fff;
+    border: 4px solid #838292 ;
+    border-bottom:none;
+   
+}
+.input-group{
+ 
+   
+    border-bottom: 1px solid #ccc;
+    padding-bottom:8px;
+    padding-top:4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width:100%;
+
+}
+.form-control{
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 25%;
+}
+.form-control:focus{
+    z-index:3;
+}
+
+    
+
+  
+  .search-input {
+    height: 36px;
+    width: 110px;
+    border:none;
+    
+    font-size: 12px;
+  }
+.bg-dark,
+.btn-dark{
+    background-color: #5f5d7e !important;
+}
 
 
 
-
-
-
+  
+ 
+  
+  
+  
+  
