@@ -156,6 +156,7 @@ incidents tab
 }
 .btn-inc{
     margin-right: 1em;
+    margin-bottom:0.75em;
 }
 .btn-inc:hover{
     background-color: #f74040 !important;
@@ -192,8 +193,26 @@ incidents tab
     background:rgba(0, 0, 0, 0.423);
     opacity:1;
     z-index:1;
-
 }
+.inc-search-modal{
+   
+    padding:0.5em 6em ; 
+    width:100%;
+    border: 1px solid rgb(235, 231, 231);
+    border-radius:5px;
+    margin-left:2em;
+   
+  
+}
+.rating-star{
+    padding:0.5em 7em ; 
+    width:100%;
+    
+    
+    margin-left:2em;
+}
+
+
 
 
 
@@ -258,15 +277,15 @@ Evaluations
     width:100%;
 
 }
-.form-control{
+/* .form-control{
     background-color: transparent;
     border-left: none;
     border-right: none;
     border-top: none;
     box-shadow: none;
     border-radius: 0;
-    width: 25%;
-}
+   
+} */
 .form-control:focus{
     z-index:3;
 }
