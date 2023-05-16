@@ -265,18 +265,17 @@ Evaluations
     border-bottom:none;
    
 }
-.input-group{
+/* .input-group{
  
    
     border-bottom: 1px solid #ccc;
-    padding-bottom:8px;
+   
     padding-top:4px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width:100%;
+    width:100%;  */
 
-}
 /* .form-control{
     background-color: transparent;
     border-left: none;
@@ -286,9 +285,8 @@ Evaluations
     border-radius: 0;
    
 } */
-.form-control:focus{
-    z-index:3;
-}
+
+
 
     
 
@@ -306,10 +304,129 @@ Evaluations
 }
 
 
+   
+.eval-search{
+    width:100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.selector{
+    width:360px;
+    
 
-  
- 
-  
-  
-  
-  
+}
+#selectField{
+    width:100%;
+    padding:15px;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    box-sizing: border-box;
+    background-color:#fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    display: flex;
+    justify-content:space-between;
+}
+#selectField i{
+    width: 12px;
+}
+#selectText{
+    color: #888484;
+}
+#list{
+    position:fixed;
+    width:23.45%;
+    margin-left: 6.5em;
+    background-color:#fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    overflow:visible;
+    z-index: 1;
+}
+.options{
+   
+    padding: 5px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.options:hover{
+    background-color: rgb(238, 234, 234);
+}
+.hide{
+    
+    
+    display:none;
+    overflow: visible;
+}
+.date-picker{
+    padding-bottom:25px;
+    padding-top: 12px;
+    margin-left:3.2em;
+    margin-right: 0.5em;
+}
+.avatar-eval{
+    width:25px;
+    height:25px;    
+    object-fit: cover;
+    object-position:center;
+    border-radius:50%;
+   
+}
+/* =============
+EVAL FORM 
+=========== */
+.eval-form-body{
+    background-color: #F8F9FC;
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.btn-prev{
+    padding: 5px 11px;
+}
+
+/* =======
+COMPLETED EVAL
+======== */
+.icon.icon-sm{
+    font-size: 0.98438rem;
+    width:2.1875rem;
+    height:2.1875rem;
+}
+.icon-soft-secondary{
+    color:#71869d;
+    background:rgb(221, 217, 217);
+}
+.icon-circle{
+    border-radius: 50%;
+}
+.card{
+    border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    border-radius: 0.75rem;
+}
+.media-eval{
+    border-right: solid 1px rgb(172, 168, 168);
+}
+.avatar-employee{
+    height:46px;
+    width:46px;
+    border-radius:50%;
+
+}
+.avatar-supervisor{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+}
+
+    
+
+
+    
