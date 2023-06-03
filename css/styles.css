@@ -432,6 +432,53 @@ COMPLETED EVAL
     font-size: 12px;
 } 
 
+/* =============
+   Dashboard
+   =========== */
+
+ .avatar-admin{
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+ } 
+ .btn-admin{
+    border-radius: 15px 15px;
+    background-color: #d9dcf5;
+    color: #3c3cfc;
+ }
+ 
+ .icon-employee{
+    background-color: rgb(197, 241, 197); 
+ }
+ .badge-soft-success{
+    color: #00c9a7;
+    background-color: rgba(0, 201, 167, 0.1);
+ }
+ .badge-soft-primary{
+    color: #377dff;
+    background-color: rgba(55, 125, 255, 0.1);
+ }
+ .badge-soft-secondary{
+    color: #71869d;
+    background-color: rgba(113, 134, 157, 0.1);
+ }
+ .badge-soft-danger{
+    color: #ed4c78;
+    background-color: rgba(237, 76, 120, 0.1);
+ }
+ .badge-soft-warning{
+    color:#ec9a3c;
+    background-color: rgba(245, 202, 153, 0.1);
+ }
+.btn-success-1{
+    font-size:13px;
+    padding-top:0px;
+    margin: 0;
+    border-radius: 25px 25px;
+    color: #00c9a7;
+    background-color: rgba(0, 201, 167, 0.1);
+    
+}
 
 
     
