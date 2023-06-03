@@ -458,14 +458,159 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-11">
                             <div class="card shadow mb-4 mt-4">
-                                <div class="card-header py-3">
+                                <div class="card-header py-3 d-flex justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Score Overview </h6>
+                                    <button type="button" class="btn btn-primary bg-primary" data-toggle="modal" data-target=".bd-example-modal-lg" >Score Card</button>
+
+                                    <div class="modal custom-modal fade bd-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+                                      <div class="modal-dialog modal-lg " >
+                                        <div class="modal-content  pl-4 pr-4 py-2 " >
+                                           
+                                            <div class="d-flex justify-content-between mt-2 mb-4 big-block ">
+                                                <div class="Score-card-heading h2 text-muted">
+                                                    <i class="fa fa-check-circle" aria-hidden="true"></i>  
+                                                     Score card
+                                                </div>
+                                            <div class="info-block d-flex">
+                                                <div class=" d-flex employee-info sup-block">
+                                                    <span>
+                                                        <img src="./img/employee.png" rel="emoployee" class="avatar avatar-supervisor ">
+                                                    </span>
+                                                    <div class="ml-2">
+                                                        <h6 class="text-primary m-0 mt-2 font-weight-bolder">Stanley Hudson</h2>
+                                                        <h6 class="text-muted m-0 font-weight-bolder">Employee</h4>
+                                                    </div>
+                                                </div>
+                                                <div class=" d-flex employee-info sup-block ml-3">
+                                                    <span>
+                                                        <img src="./img/employee.png" rel="emoployee" class="avatar avatar-supervisor ">
+                                                    </span>
+                                                    <div class="ml-2">
+                                                        <h6 class="text-primary m-0 mt-2 font-weight-bolder">Scarlet Sharma</h2>
+                                                        <h6 class="text-muted m-0 font-weight-bolder">Supervisor</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <!-- Earnings (Monthly) Card Example -->
+                                                <div class="col-xl-3 col-md-6 mb-3">
+                                                    <div class="card border-left-primary shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
+                                                                        Posssible Score</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">330</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <span class="icon icon-sm icon-soft-secondary icon-circle ml-3">
+                                                                    <i class="fa fa-suitcase"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <!-- Earnings (Annual) Card Example -->
+                                                <div class="col-xl-3 col-md-6 mb-3">
+                                                    <div class="card border-left-primary shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
+                                                                        Supervisor Score</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">66</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <span class="icon icon-sm icon-soft-secondary icon-circle ml-3">
+                                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <!-- Tasks Card Example -->
+                                                
+                        
+                                                <!-- Pending Requests Card Example -->
+                                                <div class="col-xl-3 col-md-6 mb-3">
+                                                    <div class="card border-left-primary shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
+                                                                        Employee Self Score</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">118</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <span class="icon icon-sm icon-soft-secondary icon-circle ml-3">
+                                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6 mb-3">
+                                                    <div class="card border-left-primary shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
+                                                                        Difference</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">52</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <span class="icon icon-sm icon-soft-secondary icon-circle ml-3">
+                                                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="punctuality-table">
+                                                <h2 class="h5 text-muted font-weight-bold d-sm-inline-block">FACTOR:</h2>
+                                                <P class="d-lg-inline-block ml-2">Punctuality</P>
+                                                <table class="table table-light">
+                                                    <thead class="thead-light punctuality-table-head">
+                                                      <tr>
+                                                        <th class="text-left ml-3" >QUESTION</th>
+                                                        <th scope="col">SUPERVISOR SCORE</th>
+                                                        <th scope="col">EMPLOYEE SCORE</th>
+                                                        <th scope="col">POINT VALUE</th>
+                                                        <th scope="col">TOTAL POINTS</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td class="text-left ml-3">Going above and beyond to ensure being on time</td>
+                                                        <td>3</td>
+                                                        <td>15</td>
+                                                        <td>3</td>
+                                                        <td>18</td>
+                                                      </tr>
+                                                
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-bar">
                                         <canvas id="myBarChart"></canvas>
                                    
                             </div>
+                           
+                            
 
                         </div>
                     </div>

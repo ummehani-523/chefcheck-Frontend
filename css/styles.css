@@ -425,6 +425,14 @@ COMPLETED EVAL
     width: 40px;
     border-radius:50%;
 }
+.custom-modal .modal-dialog {
+    max-width: 1200px;
+} 
+.punctuality-table-head{
+    font-size: 12px;
+} 
+
+
 
     
 
