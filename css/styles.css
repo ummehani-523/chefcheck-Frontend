@@ -479,6 +479,23 @@ COMPLETED EVAL
     background-color: rgba(0, 201, 167, 0.1);
     
 }
+.avatar-container{
+    position: relative;
+    
+}
+.avatar-icon{
+    
+    border: white 3px solid;
+    
+}
+.avatar-overlay{
+    margin-left: -1.25em;
+    position: obsolute;
+    z-index: 1;
+    top: 15%;
+    left:10%;
+
+}
 
 
     
